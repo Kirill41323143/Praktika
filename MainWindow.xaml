@@ -25,7 +25,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBox x:Name="Log" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Background="White" FontSize="32"/>
-        <TextBox x:Name="Pass" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" Background="White" FontSize="32"/>
+        <TextBox x:Name="Pass1" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" Background="White" FontSize="32"/>
         <Button Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" Content="Не зарегестрирован? Зарегестрироваться" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFA000BB" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="6"  Background="#FF0AAF49" Content="Войти" FontSize="36" Click="Button_Click_1"/>
         <Image Source="Pictures/chel.png"  Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right"/>

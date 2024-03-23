@@ -40,13 +40,15 @@ namespace WpfApp1
 
             var context = new AppDbContext();
 
-            var user = context.Users.SingleOrDefault(x => x.Login == login && x.Pass1 == password);
+            var user = context.Users.SingleOrDefault(x => x.Login == login && x.Password == Pass1.Text);
+            if (user is null) 
             {
+
                 MessageBox.Show("Неправильный логин или пароль");
                 return;
             }
+            
             MessageBox.Show("Вы успешно вошли в аккаунт");
         }
     }
-
 }

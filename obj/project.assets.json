@@ -2898,11 +2898,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\классыиобъекты\\WpfApp1\\WpfApp1.csproj",
+      "projectUniqueName": "C:\\Users\\student\\Desktop\\Praktika\\WpfApp1.csproj",
       "projectName": "WpfApp1",
-      "projectPath": "D:\\классыиобъекты\\WpfApp1\\WpfApp1.csproj",
+      "projectPath": "C:\\Users\\student\\Desktop\\Praktika\\WpfApp1.csproj",
       "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "D:\\классыиобъекты\\WpfApp1\\obj\\",
+      "outputPath": "C:\\Users\\student\\Desktop\\Praktika\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2969,7 +2969,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

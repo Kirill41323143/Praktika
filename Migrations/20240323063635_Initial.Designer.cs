@@ -11,7 +11,7 @@ using WpfApp1;
 namespace WpfApp1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240322114845_Initial")]
+    [Migration("20240323063635_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

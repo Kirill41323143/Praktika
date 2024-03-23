@@ -28,20 +28,34 @@ namespace WpfApp1
         {
             var login = log.Text;
             var pass = password.Text;
-
-            var email = emailTB.Text;
+            var email = emailT.Text;
             var context = new AppDbContext();
+            string SpecialChartles = "!@#$%^&*";
+            if (pass.Length > 8 && !pass.Any(c => SpecialChartles.Contains(c))) 
 
-            var user_exists = context.Users.FirstOrDefault(x => x.Login == login);
-            if (user_exists is not null) 
             {
-                MessageBox.Show("Такой пользователь уже зарегестрирован");
-                return;
+                var user_exists = context.Users.FirstOrDefault(x => x.Login == login);
+                if (user_exists is not null)
+                {
+                    MessageBox.Show("Такой пользователь уже зарегестрирован");
+                    return;
+                }
+      
+                var user = new User { Login = login, Email = email, Password = pass };
+                context.Users.Add(user);
+                context.SaveChanges();
+                MessageBox.Show("Вы успешно зарегестрировались");
             }
-            var user = new User { Login = login, Email = email, Password = pass }; 
-            context.Users.Add(user);   
-            context.SaveChanges();
-            MessageBox.Show("Вы успешно зарегестрировались");
+            MessageBox.Show("При вводе пароля не были соблюдены условия");
+        }
+
+        private void Vhod_Click(object sender, RoutedEventArgs e)
+        {
+           MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }
+  
+
